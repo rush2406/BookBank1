@@ -5,8 +5,8 @@ package com.example.rushali.library;
  */
 
 public class Book {
-    String name,author,publisher;
-    int id,curquantity,totalquantity;
+    String name,author,publisher,id;
+    int curquantity,totalquantity;
     String reserveid;
     String depttags;
 
@@ -22,7 +22,7 @@ public class Book {
         return publisher;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -42,7 +42,7 @@ public class Book {
         return depttags;
     }
 
-    public Book(String name, String author, String publisher, int id, int totalquantity, int curquantity, String reserveid, String depttags) {
+    public Book(String name, String author, String publisher, String id, int totalquantity, int curquantity, String reserveid, String depttags) {
 
         this.name = name;
         this.author = author;

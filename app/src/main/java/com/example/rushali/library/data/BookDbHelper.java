@@ -25,8 +25,8 @@ public class BookDbHelper extends SQLiteOpenHelper {
                 BookContract.BookEntry.COLUMN_NAME + " TEXT NOT NULL, " +
                 BookContract.BookEntry.COLUMN_AUTHOR + " TEXT NOT NULL, " +
                 BookContract.BookEntry.COLUMN_PUBLISHER + " TEXT NOT NULL, " +
-                BookContract.BookEntry.COLUMN_BOOKID + " INTEGER DEFAULT 0, " +
-                BookContract.BookEntry.COLUMN_CURQUANT + " INTEGER DEFAULT 0," +
+                BookContract.BookEntry.COLUMN_BOOKID + " TEXT NOT NULL, " +
+                BookContract.BookEntry.COLUMN_RESQUANT + " INTEGER DEFAULT 0," +
                 BookContract.BookEntry.COLUMN_TOTALQUANT + " INTEGER DEFAULT 0, " +
                 BookContract.BookEntry.COLUMN_RESIDS + " TEXT NOT NULL, "+
                 BookContract.BookEntry.COLUMN_TAGS + " TEXT NOT NULL);";
