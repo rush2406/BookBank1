@@ -29,6 +29,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
                 BookContract.BookEntry.COLUMN_RESQUANT + " INTEGER DEFAULT 0," +
                 BookContract.BookEntry.COLUMN_TOTALQUANT + " INTEGER DEFAULT 0, " +
                 BookContract.BookEntry.COLUMN_RESIDS + " TEXT NOT NULL, "+
+                BookContract.BookEntry.COLUMN_RESERVE + " TEXT NOT NULL, "+
                 BookContract.BookEntry.COLUMN_TAGS + " TEXT NOT NULL);";
         sqLiteDatabase.execSQL(CREATE_TABLE);
 

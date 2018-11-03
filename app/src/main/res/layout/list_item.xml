@@ -60,5 +60,21 @@
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="#000000"
         android:id="@+id/res"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        tools:text="ReservedIds"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000"
+        android:id="@+id/resids"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        tools:text="Reservation users"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#000000"
+        android:id="@+id/reserve"/>
 </LinearLayout>

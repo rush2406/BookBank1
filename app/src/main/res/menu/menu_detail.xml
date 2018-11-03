@@ -2,9 +2,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/issue"
+        android:title="Issue book"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        />
+    <item
+        android:id="@+id/ret"
+        android:title="Return book"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        />
+
+    <item
+        android:id="@+id/fine"
+        android:title="Pay fine"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        />
+
+    <item
+        android:id="@+id/users"
+        android:title="Users list"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        />
+
+    <item
         android:id="@+id/logout"
         android:title="Logout"
         app:showAsAction="never"
         android:orderInCategory="100"
         />
+
 </menu>

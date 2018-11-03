@@ -75,18 +75,15 @@ public class AddBook extends AppCompatActivity {
             a+="BioTech ";
 
         Log.d("Adding",a);
-        ArrayList<Integer> b=new ArrayList<>();
-        Gson gson = new Gson();
 
-
-        String r=gson.toJson(b);
         ContentValues values = new ContentValues();
         values.put(BookContract.BookEntry.COLUMN_NAME,title.getText().toString());
         values.put(BookContract.BookEntry.COLUMN_AUTHOR,auth.getText().toString());
-        values.put(BookContract.BookEntry.COLUMN_RESQUANT, 0);
+        values.put(BookContract.BookEntry.COLUMN_RESQUANT, Integer.parseInt(quan.getText().toString()));
         values.put(BookContract.BookEntry.COLUMN_TOTALQUANT,Integer.parseInt(quan.getText().toString()));
         values.put(BookContract.BookEntry.COLUMN_BOOKID,id.getText().toString());
-        values.put(BookContract.BookEntry.COLUMN_RESIDS,r);
+        values.put(BookContract.BookEntry.COLUMN_RESIDS,"");
+        values.put(BookContract.BookEntry.COLUMN_RESERVE,"");
         values.put(BookContract.BookEntry.COLUMN_TAGS,a);
         values.put(BookContract.BookEntry.COLUMN_PUBLISHER,pub.getText().toString());
 

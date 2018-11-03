@@ -51,7 +51,12 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".AccountActivity" />
-        <activity android:name=".ReserveActivity"></activity>
+        <activity android:name=".ReserveActivity" />
+        <activity android:name=".IssueActivity" />
+        <activity android:name=".ReturnActivity" />
+        <activity android:name=".UserAccount" />
+        <activity android:name=".FineActivity" />
+        <activity android:name=".UserListActivity"></activity>
     </application>
 
 </manifest>

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.rushali.library.ReserveActivity">
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,12 +13,30 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:textAppearance="?android:textAppearanceMedium"
-            android:text="Title"/>
+            android:text="Name"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:id="@+id/fillname"
+            android:id="@+id/name"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Email"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/mail"
             />
     </LinearLayout>
     <LinearLayout
@@ -32,12 +48,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:textAppearance="?android:textAppearanceMedium"
-            android:text="Author"/>
+            android:text="Dept"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:id="@+id/fillauth"
+            android:id="@+id/dept"
             />
     </LinearLayout>
     <LinearLayout
@@ -49,70 +65,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:textAppearance="?android:textAppearanceMedium"
-            android:text="Publisher"/>
+            android:text="Reg no."/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:id="@+id/fillpub"
+            android:id="@+id/reg"
             />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:text="Book Id"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:id="@+id/fillid"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:text="No.of books available"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:id="@+id/bav"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:text="Tags"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:id="@+id/tags"
-            />
-    </LinearLayout>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RESERVE"
-        android:padding="8dp"
-        android:id="@+id/resbutton"
-        android:layout_gravity="center"/>
 </LinearLayout>

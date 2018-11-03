@@ -37,5 +37,6 @@ public class BookContract {
         public static final String COLUMN_TOTALQUANT="totalquant";
         public static final String COLUMN_RESIDS="resid";
         public static final String COLUMN_TAGS="tags";
+        public static final String COLUMN_RESERVE="reserve";
     }
 }

@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             BookContract.BookEntry.COLUMN_AUTHOR,
             BookContract.BookEntry.COLUMN_PUBLISHER,
             BookContract.BookEntry.COLUMN_TOTALQUANT,
-            BookContract.BookEntry.COLUMN_RESQUANT
+            BookContract.BookEntry.COLUMN_RESQUANT,
+            BookContract.BookEntry.COLUMN_RESIDS,
+            BookContract.BookEntry.COLUMN_RESERVE
     };
 
     @Override
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
       mDbHelper = new BookDbHelper(this);
       ListView list = (ListView)findViewById(R.id.list);
-      mCursorAdapter = new BookCursorAdapter(this,null);
+      mCursorAdapter = new BookCursorAdapter(this,null,0);
       list.setAdapter(mCursorAdapter);
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -122,6 +124,27 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         { Intent i = new Intent(MainActivity.this,SettingsActivity.class);
             startActivity(i);
             return true;
+        }
+        else if(id==R.id.issue)
+        {
+            Intent intent = new Intent(MainActivity.this,IssueActivity.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.ret)
+        {
+            Intent intent = new Intent(MainActivity.this,ReturnActivity.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.fine)
+        {
+            Intent intent = new Intent(MainActivity.this,FineActivity.class);
+            startActivity(intent);
+        }
+        else if(id==R.id.users)
+        {
+
+            Intent intent = new Intent(MainActivity.this,UserListActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
